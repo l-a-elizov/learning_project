@@ -6,7 +6,7 @@
 ## Содержание:
 
 1. [Poetry](#poetry)
-2. [Git](#git)
+2. [Git](#git-and-gh)
 3. [Гайд по md файлам](#гайд-по-md-файлам)
 
 # Poetry
