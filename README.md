@@ -1,7 +1,3 @@
-
-
-
-
 # Путь в Python!
 
 Это обучающий проект-"конспект"  
@@ -165,11 +161,12 @@ def foo():
 
 <https://www.python.org/>
 
-Сокращённая ссылка (GitHub-специфично):  
-
-[](https://www.python.org/)
-
 Если нужно оформить изображение-ссылку, синтаксис схож:  
 
-[![cat](https://www.google.com/imgres?q=cat%20google&imgurl=https%3A%2F%2Fwww.onegreenplanet.org%2Fwp-content%2Fuploads%2F2023%2F07%2Fshutterstock_2252711707-scaled.jpg&imgrefurl=https%3A%2F%2Fwww.onegreenplanet.org%2Fanimals%2Fcat-titan-athens-tourist-attraction-google-maps%2F&docid=m0F8xmCet7wxpM&tbnid=37_dwb1gC_m15M&vet=12ahUKEwi_trWciKuOAxXJwQIHHbqeM7gQM3oECCwQAA..i&w=1920&h=1280&hcb=2&ved=2ahUKEwi_trWciKuOAxXJwQIHHbqeM7gQM3oECCwQAA)](https://www.python.org/)
+[![Python](https://www.python.org/static/favicon.ico)](https://www.python.org/)
 
+______________________________
+Какая цель моего репозитория?  
+Я в питоне могу сказать что новичок +++  
+Просто все таки решил конспектировать то что буду учить, но начну сначала!  
+Зачем? - Чтобы было. Может кому пригодится, хз.  
