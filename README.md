@@ -1,18 +1,13 @@
-
-
-
-
 # Путь в Python!
 
 Это обучающий проект-"конспект"  
 Буду писать сюда все то что учил...
 
-
 ## Содержание:
+
 1. [Poetry](#poetry)
 2. [Git](#git)
 3. [Гайд по md файлам](#гайд-по-md-файлам)
-
 
 # Poetry
 
@@ -59,7 +54,7 @@
     poetry install    
 ```
 
-# Git
+# Git and gh
 
 ## gh - какие-то вещи которые часто мне пригодятся по Git.
 
@@ -113,6 +108,99 @@
 
 **--confirm** – пропустить интерактивные вопросы и сразу выполнить.
 <br><br><br><br>
+
+### Настройка git:
+
+```bash
+    git config --global user.name "Ваше Имя"        # имя для коммитов
+    git config --global user.email "you@example.com" # e-mail для коммитов
+    git config --global core.editor "vim"            # предпочитаемый редактор
+```
+
+### Инициализация и клонирование:
+
+```bash
+    # создать новый репозиторий в текущей папке
+    git init
+    
+    # или склонировать удалённый
+    git clone <ссылка_на_репозиторий>
+    cd repo
+```
+
+### Отслеживание изменений:
+
+```bash
+    git status               # статус рабочих файлов и индекса
+    git add файл1 файл2      # добавить конкретные файлы в индекс
+    git add .                # добавить все изменённые/новые файлы
+    git reset файл           # убрать файл из индекса (но не из рабочей папки)
+```
+
+### Фиксация:
+
+```bash
+    git commit -m "Краткое сообщение"    # коммитить всё из индекса
+    # или, если нужно сразу добавить и закоммитить
+    git commit -am "Сообщение"           # только для отслеживаемых файлов
+```
+
+### Работа с ветками:
+
+```bash
+    git branch             # показать список веток, звёздочка — текущая
+    git branch feature    # создать ветку feature
+    git checkout feature  # переключиться на ветку feature
+    # или в одной команде (Git 2.23+):
+    git switch -c feature 
+    
+    git switch имя_ветки     # переключиться
+    git switch -c новая_ветка # создать и переключиться
+```
+
+### Слияние и ребейз:
+
+```bash
+    git checkout main
+    git merge feature   # объединит feature в main, создаст merge-коммит
+    
+    git checkout feature
+    git rebase main     # «перепишет» историю feature поверх main без merge-коммита
+```
+
+### Удалённые репозитории:
+
+```bash
+    git remote add origin https://github.com/user/repo.git  # добавить remote
+    git remote -v                                            # проверить список
+    git fetch origin                                        # скачать все ветки без слияния
+    git pull origin main                                    # fetch + merge main
+    git push -u origin feature                              # пуш ветки и прописать upstream
+    git push                                                 # в дальнейшем просто пушить
+```
+
+где,  **-u/ --set-upstream**  устанавливает связь локальной ветки с удалённой.
+
+### Просмотр истории и отличий:
+
+```bash
+    git log                          # линейная история
+    git log --oneline --graph --all  # однострочный граф
+    git diff                          # изменения в рабочей папке
+    git diff --staged                 # изменения в индексе
+```
+
+### Восстановление и «откат»:
+
+```bash
+    git restore файл             # отменить незакоммиченные изменения
+    git restore --staged файл    # убрать файл из индекса
+    git checkout <commit> -- файл  # вернуть конкретный файл к состоянию из commit
+    git revert <commit>          # создать новый коммит, отменяющий указанный
+    git reset --soft <commit>    # откатить HEAD, но сохранить индекс/рабочую папку
+    git reset --hard <commit>    # откатить всё — осторожно, без сохранения
+```
+
 # ***Гайд по md файлам:***
 
 # Заголовок уровня 1
@@ -165,11 +253,12 @@ def foo():
 
 <https://www.python.org/>
 
-Сокращённая ссылка (GitHub-специфично):  
+Если нужно оформить изображение-ссылку, синтаксис схож:
 
-[](https://www.python.org/)
+[![Python](https://www.python.org/static/favicon.ico)](https://www.python.org/)
 
-Если нужно оформить изображение-ссылку, синтаксис схож:  
-
-[![cat](https://www.google.com/imgres?q=cat%20google&imgurl=https%3A%2F%2Fwww.onegreenplanet.org%2Fwp-content%2Fuploads%2F2023%2F07%2Fshutterstock_2252711707-scaled.jpg&imgrefurl=https%3A%2F%2Fwww.onegreenplanet.org%2Fanimals%2Fcat-titan-athens-tourist-attraction-google-maps%2F&docid=m0F8xmCet7wxpM&tbnid=37_dwb1gC_m15M&vet=12ahUKEwi_trWciKuOAxXJwQIHHbqeM7gQM3oECCwQAA..i&w=1920&h=1280&hcb=2&ved=2ahUKEwi_trWciKuOAxXJwQIHHbqeM7gQM3oECCwQAA)](https://www.python.org/)
-
+______________________________
+Какая цель моего репозитория?  
+Я в питоне могу сказать что новичок +++  
+Просто все таки решил конспектировать то что буду учить, но начну сначала!  
+Зачем? - Чтобы было. Может кому пригодится, хз.  
