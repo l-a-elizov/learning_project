@@ -253,7 +253,11 @@ def foo():
 
 <https://www.python.org/>
 
+<<<<<<< HEAD
 Если нужно оформить изображение-ссылку, синтаксис схож:
+=======
+Если нужно оформить изображение-ссылку, синтаксис схож:  
+>>>>>>> 77131ef070b76a9fac5b53e26941ba9113301207
 
 [![Python](https://www.python.org/static/favicon.ico)](https://www.python.org/)
 
